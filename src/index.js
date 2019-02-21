@@ -1,9 +1,9 @@
 module.exports = function check(str, bracketsConfig)  {
-    var list=[]
-    var config ={}
-    var j=1
+    let list=[]
+    let config ={}
+    
     for (var i=0;i<bracketsConfig.length;i++) {
-        config[bracketsConfig[i][j]] = bracketsConfig[i][0]
+        config[bracketsConfig[i][1]] = bracketsConfig[i][0]
     }
     
     for (var k=0;k<str.length;k++) {
